@@ -25,18 +25,7 @@ class App extends Component {
     <Route path="/bookings" component={BookingsPage} />
     </Switch>
     </main>
-
-    <Card style={{ width: '18rem' }}>
-    <Card.Img variant="top" src="holder.js/100px180" />
-    <Card.Body>
-      <Card.Title>Georgia Lofts </Card.Title>
-      <Card.Text>
-        49 Loft units $22,000,000 at 7% Cap Rate.
-      </Card.Text>
-      <Button variant="primary">Tell me more</Button>
-    </Card.Body>
-  </Card>
-
+    
     </React.Fragment>
     </BrowserRouter>
     
