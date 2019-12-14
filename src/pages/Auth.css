@@ -5,6 +5,10 @@
 }
 
 
+.form-control input {
+    width: 100%;
+    display: block;
+}
 
 .form-control label {
     margin-bottom: 0.5rem;
