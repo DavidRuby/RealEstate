@@ -12,11 +12,11 @@
 
 .form-control label {
     margin-bottom: 0.5rem;
-    border-style: none;
 }
 
 .form-control {
     margin-bottom: 2.5rem;
+    border-style: none;
 }
 
 .form-actions button {
