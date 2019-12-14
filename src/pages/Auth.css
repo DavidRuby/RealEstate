@@ -15,6 +15,9 @@
 
 }
 
+.form-control {
+    margin-bottom: 1rem;
+}
 
 .form-actions button {
     background: 01d1d1;
