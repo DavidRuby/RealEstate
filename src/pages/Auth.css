@@ -12,14 +12,15 @@
 
 .form-control label {
     margin-bottom: 0.5rem;
+    border-style: none;
 }
 
 .form-control {
     margin-bottom: 2.5rem;
 }
 
-.form-actions {
-    background: 01d1d1;
+.form-actions button {
+    background: #01d1d1;
     font: inherit;
     border: 1px solid #01d1d1;
     border-radius: 3px;
