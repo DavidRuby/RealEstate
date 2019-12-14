@@ -1,7 +1,7 @@
 .auth-form {
     width: 40 rem;
     max-width: 80%;
- 
+    margin: 5rem auto;
 }
 
 .form-control input,
@@ -12,14 +12,13 @@
 
 .form-control label {
     margin-bottom: 0.5rem;
-
 }
 
 .form-control {
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
 }
 
-.form-actions button {
+.form-actions {
     background: 01d1d1;
     font: inherit;
     border: 1px solid #01d1d1;
