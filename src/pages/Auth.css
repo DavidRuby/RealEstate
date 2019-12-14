@@ -4,8 +4,7 @@
     margin: 5rem auto;
 }
 
-
-.form-control input {
+.form-control label {
     width: 100%;
     display: block;
 }
