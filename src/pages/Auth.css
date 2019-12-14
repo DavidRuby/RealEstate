@@ -4,6 +4,7 @@
     margin: 5rem auto;
 }
 
+.form-control input,
 .form-control label {
     width: 100%;
     display: block;
@@ -14,9 +15,6 @@
 
 }
 
-.form-control {
-    margin-bottom: 1rem;
-}
 
 .form-actions button {
     background: 01d1d1;
