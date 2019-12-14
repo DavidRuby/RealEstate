@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+import './Auth.css'
 
 class AuthPage extends Component {
     render () {
-        return <form>
+        return (
+        <form className="auth-form">
             <div className="form-control">
                 <label htmlfor="email">E-mail</label>
                 <input type="email" id="email" />
@@ -12,11 +14,11 @@ class AuthPage extends Component {
             <input type="password" id="password" />
             </div>
             <div classname="form-actions">
-            <button type="button">Switch to Signup</button>
             <button type="submit">Submit</button>
+            <button type="button">Switch to Signup</button>
             </div>
-
-        </form>;
+        </form>
+        );
     }
 }
 
