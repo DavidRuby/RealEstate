@@ -3,6 +3,7 @@ import Modal from '../components/Modal/Modal';
 
 
 import './Events.css';
+import Backdrop from '../components/Backdrop/Backdrop';
 
 
 class Eventspage extends Component {
@@ -27,12 +28,14 @@ class Eventspage extends Component {
     render () {
         return (
             <React.Fragment>
+            
                 {this.state.creating && <Backdrop />}
+
                 {this.state.creating && <Modal title="Add Event" canCancel canConfirm onCancel={this.modalCancelHandler} on Confirm={this.modalConfirmHandler}> 
                     <p>Modal Content</p>
                 </Modal>}
             <div className="events-control">
-                <p>Create Property Listing Event Tour</p>
+                <p>Create Event</p>
                     <button className="btn" onClick={this.startCreateEventHandler}>Create Event Showing</button>
             </div>
             </React.Fragment>
