@@ -42,11 +42,20 @@ align-items: center;
 .main-navigation__item a {
     text-decoration: none;
     color: #000;
+    padding: 0.25rem 0.5rem;
+    border: none;
+    font: inherit;
+    background: transparent;
+    cursor: pointer;
 
 }
 
 .main-navigation__item a:hover,
 .main-navigation__item a:active,
-.main-navigation__item a.active {
-    color: #f8e264;
+.main-navigation__item a.active,
+.main-navigation__item button:hover,
+.main-navigation__item button:active {
+    background: #ffffff;
+    color: #153E8C;
+    border-radius: 5px;
 }
