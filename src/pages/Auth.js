@@ -28,13 +28,27 @@ class AuthPage extends Component {
              `
          };
 
+/// GraphQl API is not currently connected and needs troubleshooting
+
          fetch('http://locahost:8000/graphql', {
              method: 'POST',
              body: JSON.stringify(requestBody),
              headers: {
                 'Content-Type': 'application/json'
              }
-         });
+         })
+        .then(res => {
+             if (res.status !== 200 && res.status !== 201) {
+                 throw new Error('Failed!');
+             }
+             return res.json();
+         })
+         .then(resData => {
+             console.log(resData);
+         })
+         .catch(err => {
+             console.log(err);
+         })
     };
 
     render () {
