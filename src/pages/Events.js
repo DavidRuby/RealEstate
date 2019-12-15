@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Modal from '../components/Modal/Modal';
 import './Events.css';
-import Backdrop from '../components/Backdrop/backdrop';
+import Backdrop from '../components/Backdrop/Backdrop';
 
 class Eventspage extends Component {
     render () {
@@ -13,8 +13,8 @@ class Eventspage extends Component {
                     <p>Modal Content</p>
                 </Modal>
             <div className="events-control">
-                <p>Book Property Listing Showings</p>
-                    <button className="btn">Create Event</button>
+                <p>Create Property Listing Event Tour</p>
+                    <button className="btn">Create Event Showing</button>
             </div>
             </React.Fragment>
         );
