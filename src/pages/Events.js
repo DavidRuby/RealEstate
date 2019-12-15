@@ -32,7 +32,6 @@ class EventsPage extends Component {
             
                 <Backdrop />
 
-                {this.state.creating && 
                   <Modal 
                     title="Add Event" 
                     canCancel 
@@ -40,7 +39,7 @@ class EventsPage extends Component {
                     onCancel={this.modalCancelHandler} 
                     on Confirm={this.modalConfirmHandler}> 
                   <p>Modal Content</p>
-                  </Modal>}
+                  </Modal>
 
                 <div className="events-control">
                 <p>Create Event</p>
