@@ -30,7 +30,7 @@ class EventsPage extends Component {
         return (
             <React.Fragment>
             
-                {this.state.creating && <Backdrop />}
+                <Backdrop />
 
                 {this.state.creating && 
                   <Modal 
