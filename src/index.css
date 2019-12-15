@@ -30,14 +30,14 @@ code {
 
 .form-actions button,
 .btn {
-    background: #01d1d1;
+    background: #153E8C;
     font: inherit;
-    border: 1px solid #01d1d1;
+    border: 1px solid #153E8C;
     border-radius: 3px;
     padding: 0.25rem 1rem;
     margin-right: 1rem;
     box-shadow: 1px 1px 5px rgba(0,0,0, 0.26);
-    color: white;
+    color: #b2a200;
     cursor: pointer;
 }
 
@@ -45,6 +45,6 @@ code {
 .form-actions button:active,
 .btn:hover,
 .btn.active {
-    background: #01a7a7;
-    border-color: #01a7a7;
+    background: white;
+    border-color: #153E8C;
 }
