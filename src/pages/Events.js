@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Modal from '../components/Modal/Modal';
+
 import './Events.css';
 import Backdrop from '../components/Backdrop/Backdrop';
 
