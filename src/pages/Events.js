@@ -27,7 +27,7 @@ class Eventspage extends Component {
         return (
             <React.Fragment>
                 {this.state.creating && <Backdrop />}
-                {this.state.creating && <Modal title="Add Event" canCancel canConfirm>
+                {this.state.creating && <Modal title="Add Event" canCancel canConfirm onCancel={this.modalCancelHandler} on Confirm={this.modalConfirmHandler}> 
                     <p>Modal Content</p>
                 </Modal>}
             <div className="events-control">
