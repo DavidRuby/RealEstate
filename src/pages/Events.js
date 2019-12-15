@@ -30,7 +30,7 @@ class EventsPage extends Component {
         return (
             <React.Fragment>
             
-                <Backdrop />
+             
 
                   <Modal 
                     title="Add Event" 
