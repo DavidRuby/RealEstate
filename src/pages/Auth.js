@@ -2,10 +2,20 @@ import React, { Component } from 'react';
 import './Auth.css'
 
 class AuthPage extends Component {
+    state = {
+        isLogin: true
+    };
+
     constructor(props) {
         super(props);
         this.emailEl = React.createRef();
         this.passwordEl = React.createRef();
+    }
+
+    switchModeHandler = () => {
+        this.setState(prevState => {
+            return {isLogin: !prevState.isLogin};
+        })
     }
 
     submitHandler = (event) => {
@@ -17,17 +27,34 @@ class AuthPage extends Component {
            return;         
          }
 
-         const requestBody = {
-             query: `
-              mutation {
-                  createUser(UserInput: {email: "${email}", password: "${password}"}) {
-                      _id
-                      email
-                  }
-              }
-             `
-         };
+        let requestBody = {
+            query: `
+                query {
+                    login(email: "${email}", password: "${password}") {
+                        userId
+                        token
+                        tokenExpiration
+                    }
+                }
+            `
+        };
 
+        if (!this.state.isLogin) {
+
+             requestBody = {
+                query: `
+                 mutation {
+                     createUser(UserInput: {email: "${email}", password: "${password}"}) {
+                         _id
+                         email
+                     }
+                 }
+                `
+            };
+   
+        }
+
+   
 /// GraphQl API is not currently connected and needs troubleshooting
 
          fetch('http://locahost:8000/graphql', {
@@ -64,7 +91,9 @@ class AuthPage extends Component {
             </div>
             <div classname="form-actions">
             <button type="submit">Submit</button>
-            <button type="button">Switch to Signup</button>
+            <button type="button" onClick={this.switchModeHandler}>
+             Switch to {this.state.isLogin ? 'Signup': 'Login'}
+            </button>
             </div>
         </form>
         );
