@@ -30,7 +30,7 @@ align-items: center;
     padding: 0;
     margin: 0;
     display: flex;
-
+    align-items: center;
 }
 
 .main-navigation__item li {
@@ -41,12 +41,14 @@ align-items: center;
 
 .main-navigation__item a {
     text-decoration: none;
-    color: #000;
+    color: #b2a200;
     padding: 0.25rem 0.5rem;
     border: none;
     font: inherit;
     background: transparent;
     cursor: pointer;
+    vertical-align: middle;
+    margin: 0;
 
 }
 
