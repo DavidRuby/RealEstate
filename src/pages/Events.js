@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Modal from '../components/Modal/Modal';
 import Backdrop from '../components/Backdrop/Backdrop';
+import AuthContext from '../context/Auth-context'
 
 
 import './Events.css';
@@ -12,6 +13,8 @@ class EventsPage extends Component {
     State = {
         creating: false
     };
+
+    static contextType = AuthContext;
 
     constructor(props) {
         super(props);

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Auth.css'
+import AuthContext from '../../context/AuthContext';
 
 
 class AuthPage extends Component {
@@ -7,7 +8,7 @@ class AuthPage extends Component {
         isLogin: true
     };
 
-
+    static contextType = AuthContext;
 
     constructor(props) {
         super(props);
