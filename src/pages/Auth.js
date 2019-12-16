@@ -30,7 +30,9 @@ class AuthPage extends Component {
            return;         
          }
 
-        let requestBody = {
+        /// GraphQL request to the back end
+        
+         let requestBody = {
             query: `
                 query {
                     login(email: "${email}", password: "${password}") {
@@ -94,7 +96,7 @@ class AuthPage extends Component {
             <label htmlfor="password">Password</label>
             <input type="password" id="password" ref={this.passwordEl} />
             </div>
-            <div classname="form-actions button">
+            <div className="form-actions">
             <button type="submit">Submit</button>
             <button type="button" onClick={this.switchModeHandler}>
              Switch to {this.state.isLogin ? 'Signup': 'Login'}

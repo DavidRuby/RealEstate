@@ -44,6 +44,7 @@ if  (
 
         const event = {title, price, date, description};
         console.log(event);
+        
     };
 
     modalCancelHandler = () => {
