@@ -60,7 +60,7 @@ class AuthPage extends Component {
         }
 
    
-/// GraphQl API is not currently connected and needs troubleshooting
+/// GraphQl API is not currently connected and needs troubleshooting!
 
          fetch('http://locahost:8000/graphql', {
              method: 'POST',
@@ -77,13 +77,19 @@ class AuthPage extends Component {
          })
          .then(resData => {
            if (resData.data.login.token) {
-            this.context.login(resData.data.login.token, resData.data.login.userId, resData.data.login.tokenExpiration)
+            this.context.login(
+                resData.data.login.token, 
+                resData.data.login.userId, 
+                resData.data.login.tokenExpiration
+            );
            }
          })
          .catch(err => {
              console.log(err);
-         })
+         });
     };
+
+    /// End of GraphQL request
 
     render () {
         return (

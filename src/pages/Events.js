@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import Modal from '../components/Modal/Modal';
 import Backdrop from '../components/Backdrop/Backdrop';
+import './AuthContext from ../context/auth-context';
+
+
 
 
 import './Events.css';
@@ -21,6 +24,8 @@ class EventsPage extends Component {
         this.descriptionElRef = React.createRef();
 
     }
+
+    static contextType = AuthContext;
 
     startCreateEventHandler = () => {
         this.setState({ creating: true });
@@ -44,21 +49,62 @@ if  (
 
         const event = {title, price, date, description};
         console.log(event);
-        
+
+               /// GraphQL request to the back end
+    
+               const requestBody = {
+                query: `
+                 mutation {
+                     createEvent(eventInput: {title: "${title}", description: "${description}", price: "${price}", date: "${date}") {
+                         _id
+                         email
+                         description
+                         date 
+                         price
+                         creator {
+                             _id
+                             email
+                         }
+                     }
+                 }
+                `
+            };
+
+        const token = this.context.token;
+
+         fetch('http://locahost:8000/graphql', {
+             method: 'POST',
+             body: JSON.stringify(requestBody),
+             headers: {
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer' + token
+             }
+         })
+        .then(res => {
+             if (res.status !== 200 && res.status !== 201) {
+                 throw new Error('Failed!');
+             }
+             return res.json();
+         })
+         .then(resData => {
+           console.log(resData);
+         })
+         .catch(err => {
+             console.log(err);
+         });
     };
+
+    /// End of GraphQL request
 
     modalCancelHandler = () => {
         this.setState({creating: false});
     };
-
 
     render () {
         return (
 
             <React.Fragment>
             
-             
-                  
                     <Modal 
                     title="Add Event" 
                     canCancel 
@@ -93,20 +139,16 @@ if  (
                 </form>
                 </Modal>
                 
-
-                
                     <div className="events-control">
                     <p>Create Event Showings</p>
                         <button className="btn" onClick={this.startCreateEventHandler}>
                         Create Event
                         </button>
                     </div>
-              
-                
-                
+               
             </React.Fragment>
         );
-    }
-}
+    };
+};
 
 export default EventsPage;
