@@ -14,7 +14,8 @@ code {
 
 
 .form-control input,
-.form-control label {
+.form-control label,
+.form-control textarea {
     width: 100%;
     display: block;
 }

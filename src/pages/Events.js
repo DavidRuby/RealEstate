@@ -42,9 +42,32 @@ class EventsPage extends Component {
                   </Modal>
 
                 <div className="events-control">
-                <p>Create Event Showing</p>
+                <form>
 
-                    <buttonlink linkto="../components/Modal/Modal" className="btn" onClick={this.startCreateEventHandler}>Create Event</buttonlink>
+                <div classname="form-control">
+                <label htmlFor="title">Title</label>
+                <input type="text" id="title"></input>
+                </div>
+
+                <div classname="form-control">
+                <label htmlFor="price">Price</label>
+                <input type="number" id="price"></input>
+                </div>
+
+                <div classname="form-control">
+                <label htmlFor="date">Date</label>
+                <input type="date" id="date"></input>
+                </div>
+
+                <div classname="form-control">
+                <label htmlFor="description">Description</label>
+                <textarea id="description" rows="4"></textarea>
+                </div>
+
+                
+                </form>
+
+                    <button className="btn" onClick={this.startCreateEventHandler}>Create Event</button>
                 </div>
             </React.Fragment>
         );
