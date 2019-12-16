@@ -113,8 +113,8 @@ if  (
                     on Confirm={this.modalConfirmHandler}
                     > 
                     </Modal>
-                    
-                  <form>
+
+                  <form className="form-control">
 
                 <div classname="form-control">
                 <label htmlFor="title">Title</label>
@@ -139,7 +139,6 @@ if  (
                 />
                 </div>
                 </form>
-                
                 
                     <div className="events-control">
                     <p>Create Event Showings</p>
