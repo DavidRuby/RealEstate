@@ -7,7 +7,7 @@ import AuthPage from './pages/Auth';
 import BookingsPage from './pages/Bookings';
 import EventsPage from './pages/Events';
 import MainNavigation from './components/Navigation/MainNavigation';
-import AuthContext from './context/Auth-context';
+import AuthContext from './components/context/Auth-context';
 
 class App extends Component {
 
