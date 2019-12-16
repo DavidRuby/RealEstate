@@ -29,7 +29,8 @@ code {
 }
 
 .form-actions button,
-.btn {
+.btn,
+.btn-btn-primary {
     background: #153E8C;
     font: inherit;
     border: 1px solid #153E8C;
@@ -44,7 +45,10 @@ code {
 .form-actions button:hover,
 .form-actions button:active,
 .btn:hover,
-.btn.active {
+.btn.active,
+.btn-btn-primary,
+.btn-btn-primary:hover
+.btn-btn-primary:active {
     background: white;
     border-color: #153E8C;
 }
