@@ -44,7 +44,7 @@ class EventsPage extends Component {
                 <div className="events-control">
                 <p>Create Event Showing</p>
 
-                    <link to="../components/Modal/Modal" className="btn btn-primary" >Create Event</link>
+                    <button className="btn" onClick={this.startCreateEventHandler}>Create Event</button>
                 </div>
             </React.Fragment>
         );
