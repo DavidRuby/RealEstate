@@ -29,6 +29,7 @@ code {
 .form-control {
     margin-bottom: 2.5rem;
     border-style: none;
+    width: 60%;
 }
 
 .form-actions button,
