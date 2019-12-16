@@ -112,6 +112,8 @@ if  (
                     on Cancel={this.modalCancelHandler} 
                     on Confirm={this.modalConfirmHandler}
                     > 
+                    </Modal>
+                    
                   <form>
 
                 <div classname="form-control">
@@ -137,7 +139,7 @@ if  (
                 />
                 </div>
                 </form>
-                </Modal>
+                
                 
                     <div className="events-control">
                     <p>Create Event Showings</p>
