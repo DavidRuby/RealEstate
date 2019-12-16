@@ -29,7 +29,7 @@ class EventsPage extends Component {
     modalConfirmHandler = () => {
         this.setState({ creating: false });
         const title = this.titleElRef.current.value;
-        const price = this.priceElRef.current.value;
+        const price = +this.priceElRef.current.value;
         const date = this.dateElRef.current.value;
         const description = this.descriptionElRef.current.value;
 
