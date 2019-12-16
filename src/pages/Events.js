@@ -57,7 +57,7 @@ if  (
             <React.Fragment>
             
              
-                  {this.state.creating && (
+                  
                     <Modal 
                     title="Add Event" 
                     canCancel 
@@ -91,16 +91,16 @@ if  (
                 </div>
                 </form>
                 </Modal>
-                )}
+                
 
-                {this.context.token && (
+                
                     <div className="events-control">
                     <p>Create Event Showings</p>
                         <button className="btn" onClick={this.startCreateEventHandler}>
                         Create Event
                         </button>
                     </div>
-                )}
+              
                 
                 
             </React.Fragment>
