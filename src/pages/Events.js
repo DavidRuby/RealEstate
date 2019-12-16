@@ -13,6 +13,8 @@ class EventsPage extends Component {
         creating: false
     };
 
+    
+
     startCreateEventHandler = () => {
         this.setState({creating: true });
     };

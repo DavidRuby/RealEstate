@@ -18,6 +18,8 @@ code {
 .form-control textarea {
     width: 100%;
     display: block;
+    margin: 0 auto;
+    
 }
 
 .form-control label {
