@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import Modal from '../components/Modal/Modal';
 import Backdrop from '../components/Backdrop/Backdrop';
-/// import AuthContext from '../components/context/Auth-context';
-
-
 
 
 import './Events.css';
@@ -25,7 +22,7 @@ class EventsPage extends Component {
 
     }
 
-    /// static contextType = AuthContext;
+
 
     startCreateEventHandler = () => {
         this.setState({ creating: true });
