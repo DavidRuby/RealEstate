@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Modal from '../components/Modal/Modal';
 import Backdrop from '../components/Backdrop/Backdrop';
-import AuthContext from '../context/Auth-context';
+import AuthContext from '../components/context/Auth-context';
 
 
 
@@ -40,7 +40,7 @@ class EventsPage extends Component {
 
 if  (
     title.trim().length === 0 || 
-    price.trim().length === 0 || 
+    price <= 0 || 
     date.trim().length === 0 || 
     description.trim().length === 0
     ) {
