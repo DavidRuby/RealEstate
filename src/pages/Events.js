@@ -14,11 +14,11 @@ class EventsPage extends Component {
     };
 
     startCreateEventHandler = () => {
-        this.setState({creating: true});
+        this.setState({creating: true });
     };
 
     modalConfirmHandler = () => {
-        this.setState({creating: false});
+        this.setState({creating: false });
     };
 
     modalCancelHandler = () => {
@@ -28,21 +28,22 @@ class EventsPage extends Component {
 
     render () {
         return (
+
             <React.Fragment>
             
              
-
                   <Modal 
                     title="Add Event" 
                     canCancel 
                     canConfirm 
-                    onCancel={this.modalCancelHandler} 
+                    on Cancel={this.modalCancelHandler} 
                     on Confirm={this.modalConfirmHandler}> 
-                  <p>Modal Content</p>
+                  <p>Modal Content to be written</p>
                   </Modal>
 
                 <div className="events-control">
                 <p>Create Event Showing</p>
+
                     <button className="btn" onClick={this.startCreateEventHandler}>Create Event</button>
                 </div>
             </React.Fragment>
