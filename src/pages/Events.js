@@ -27,7 +27,7 @@ class EventsPage extends Component {
     }
 
     componentDidMount() {
-        this.fetchEvents;
+        this.fetchEvents();
     }
 
     startCreateEventHandler = () => {
