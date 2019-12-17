@@ -27,16 +27,22 @@ code {
 }
 
 .form-control {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
     margin-bottom: 0;
+    
     border-style: none;
-    width: 90%;
+    width: 35%;
 }
 
 .form-actions button,
 .btn {
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 150px;
+    margin-bottom: 0;
+
     background: #153E8C;
     font: inherit;
     border: 1px solid #153E8C;
@@ -54,4 +60,8 @@ code {
 .btn.active {
     background: white;
     border-color: #153E8C;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    margin-bottom: 0;
 }
