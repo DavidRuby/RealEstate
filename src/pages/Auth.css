@@ -14,11 +14,8 @@
     box-shadow: 1px 1px 5px rgba(0,0,0, 0.26);
     color: #b2a200;
     cursor: pointer;
-
-    margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: auto;
+    margin-right: 1rem;
+    position: absolute;
 }
 
 .form-actions button:hover,
