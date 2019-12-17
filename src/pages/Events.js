@@ -146,7 +146,7 @@ class EventsPage extends Component {
 
     return (
       <React.Fragment>
-        {this.state.creating && <Backdrop />}
+      
         {this.state.creating && (
           <Modal
             title="Add Event"
