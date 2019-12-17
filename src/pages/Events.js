@@ -146,13 +146,19 @@ if  (
 
                 </form>
                 
+                    
                     <div className="events-control">
                     <p>Create Event Showings</p>
                         <button className="btn" onClick={this.startCreateEventHandler}>
                         Create Event
                         </button>
                     </div>
-               
+
+<ul className="events__list">
+    <li className="events__list-item">Test</li>
+    <li className="events__list-item">Test</li>
+</ul>
+
             </React.Fragment>
         );
     };

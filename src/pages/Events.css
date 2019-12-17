@@ -5,5 +5,20 @@
     margin: 2rem auto;
     width: 30rem;
     max-width: 80%;
-    margin-top: 375px;
+    margin-top: 390px;
+}
+
+
+.events__list {
+    margin-top: 2rem;
+    width: 40rem;
+    max-width: 90%;
+    margin: 2rem auto;
+    padding: 0;
+}
+
+.events__list-item {
+    margin: 1rem 0;
+    padding: 1 rem;
+    border: 1px solid #153E8C;
 }
