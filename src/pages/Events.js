@@ -140,8 +140,8 @@ if  (
                 </div>
 
                 <section className="modal__actions">
-                <button className="btn" >Cancel</button>}
-                <button className="btn" >Confirm</button>}
+                <button className="btn" >Cancel</button>
+                <button className="btn" >Confirm</button>
                 </section>
 
                 </form>
