@@ -132,12 +132,18 @@ if  (
                 </div>
 
                 <div classname="form-control">
-                <label htmlFor="description">Notes</label>
+                <label htmlFor="description">Description</label>
                 <textarea id="description" 
                 rows="4" 
                 ref={this.descriptionElRef}
                 />
                 </div>
+
+                <section className="modal__actions">
+                {props.canCancel && <button className="btn" onClick={props.onCancel}>Cancel</button>}
+                {props.canConfirm && <button className="btn" onClick={props.onConfirm}>Confirm</button>}
+                </section>
+                
                 </form>
                 
                     <div className="events-control">

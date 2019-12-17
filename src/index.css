@@ -38,10 +38,6 @@ code {
 
 .form-actions button,
 .btn {
-   margin-left: auto;
-   margin-right: auto;
-   margin-top: 150px;
-    margin-bottom: 0;
 
     background: #153E8C;
     font: inherit;
@@ -60,8 +56,4 @@ code {
 .btn.active {
     background: white;
     border-color: #153E8C;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 150px;
-    margin-bottom: 0;
 }
