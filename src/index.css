@@ -41,7 +41,8 @@ code {
     border: 1px solid #153E8C;
     border-radius: 3px;
     padding: 0.25rem 1rem;
-    margin-right: 10rem;
+    margin-right: 150px;
+
     box-shadow: 1px 1px 5px rgba(0,0,0, 0.26);
     color: #b2a200;
     cursor: pointer;
