@@ -13,7 +13,7 @@ const mainNavigation = props => (
         return (
             <header className="main-navigation">
             <div className="main-navigation__logo">
-                <h1>Real-Estate Inventory</h1>
+                <h1>Mycashcowproperty</h1>
             </div>
             <nav className="main-navigation__item">
             <ul>
