@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
@@ -11,7 +10,6 @@ import AuthContext from './context/auth-context';
 
 
 class App extends Component {
-
 
   state = {
     token: null,
@@ -28,8 +26,6 @@ class App extends Component {
 
   render() {
     return (
-
-    
 
     <BrowserRouter>
     <React.Fragment>

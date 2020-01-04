@@ -11,13 +11,10 @@ const mainNavigation = props => (
     {(context) => {
 
         return (
-
-
             <header className="main-navigation">
             <div className="main-navigation__logo">
-                <h1>Mycashcowproperty</h1>
+                <h1>Real-Estate Inventory</h1>
             </div>
-
             <nav className="main-navigation__item">
             <ul>
                 {!context.token && (
@@ -41,8 +38,6 @@ const mainNavigation = props => (
             </ul>
             </nav>
         </header>
-
-    
         )
 
     }}
@@ -50,6 +45,5 @@ const mainNavigation = props => (
     </AuthContext.Consumer>
 
 );
-
 
 export default mainNavigation;

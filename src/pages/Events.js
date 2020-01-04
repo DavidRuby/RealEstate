@@ -136,6 +136,7 @@ class EventsPage extends Component {
   }
 
   render() {
+    console.log(this.state.creating);
     const eventList = this.state.events.map(event => {
       return (
         <li key={event._id} className="events__list-item">

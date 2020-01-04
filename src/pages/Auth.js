@@ -50,7 +50,7 @@ class AuthPage extends Component {
              requestBody = {
                 query: `
                  mutation {
-                     createUser(UserInput: {email: "${email}", password: "${password}"}) {
+                     createUser(userInput: {email: "${email}", password: "${password}"}) {
                          _id
                          email
                      }
@@ -63,12 +63,14 @@ class AuthPage extends Component {
    
 /// GraphQl API is not currently connected and needs troubleshooting!
 
-         fetch('http://locahost:8000/graphql', {
+         fetch('http://localhost:8000/graphql', {
              method: 'POST',
+             mode:'cors',
              body: JSON.stringify(requestBody),
-             headers: {
-                'Content-Type': 'application/json'
-             }
+             headers: new Headers({
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+             })
          })
         .then(res => {
              if (res.status !== 200 && res.status !== 201) {
@@ -77,7 +79,7 @@ class AuthPage extends Component {
              return res.json();
          })
          .then(resData => {
-           if (resData.data.login.token) {
+           if (resData.data.login) {
             this.context.login(
                 resData.data.login.token, 
                 resData.data.login.userId, 
