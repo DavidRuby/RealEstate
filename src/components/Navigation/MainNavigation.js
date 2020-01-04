@@ -12,6 +12,7 @@ const mainNavigation = props => (
 
         return (
 
+
             <header className="main-navigation">
             <div className="main-navigation__logo">
                 <h1>Mycashcowproperty</h1>
@@ -49,26 +50,6 @@ const mainNavigation = props => (
     </AuthContext.Consumer>
 
 );
-
-class mainNavigationvideo extends React.Component {
-    render() {
-        return (
-          <video
-            autoPlay
-            muted
-            loop
-            style={{
-              position: "fixed",
-              width: "100%",
-              left: 0,
-              top: 0
-            }}
-          >
-            <source src="https://youtu.be/dk9uNWPP7EA.mp4" type="video/mp4" />
-          </video>
-        );
-      }
-    }
 
 
 export default mainNavigation;

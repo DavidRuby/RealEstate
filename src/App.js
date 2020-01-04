@@ -9,8 +9,17 @@ import EventsPage from './pages/Events';
 import MainNavigation from './components/Navigation/MainNavigation';
 import AuthContext from './context/auth-context';
 
+import ReactGA from 'react-ga';
+import auth from './auth.ts';
+
+const trackingId = "UA-155297491-1"
+ReactGA.initialize(trackingId);
+ReactGA.set({
+  userId: auth.currentUserId(),
+})
 
 class App extends Component {
+
 
   state = {
     token: null,
@@ -27,6 +36,8 @@ class App extends Component {
 
   render() {
     return (
+
+    
 
     <BrowserRouter>
     <React.Fragment>
