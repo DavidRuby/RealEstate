@@ -50,7 +50,7 @@ const mainNavigation = props => (
 
 );
 
-class mainNavigation extends React.Component {
+class mainNavigationvideo extends React.Component {
     render() {
         return (
           <video
