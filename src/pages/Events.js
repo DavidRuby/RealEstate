@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import Modal from '../components/Modal/Modal';
 import Backdrop from '../components/Backdrop/Backdrop';
-import AuthContext from '../context/auth-context';
+
 
 
 import './Events.css';
@@ -11,12 +11,6 @@ import './Events.css';
 
 class EventsPage extends Component {
 
-    State = {
-        creating: false,
-        events: []
-    };
-
-    static contextType = AuthContext;
 
     constructor(props) {
         super(props);
@@ -166,7 +160,7 @@ if  (
                     on Confirm={this.modalConfirmHandler}
                     > 
                     
-                    </Modal>
+                    
                     
                   <form className="form-control">
 
@@ -209,7 +203,7 @@ if  (
                     </div>
 
                 <ul className="events__list">{eventList}</ul>
-
+                </Modal>
             </React.Fragment>
         );
     };
