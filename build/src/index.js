@@ -8,8 +8,6 @@
 */
 const uuid = require('uuid/v4');
 const colors = require('ansi-colors');
-const loglevel = require('./loglevel');
-
 const symbols = {
   trace: colors.grey('₸'),
   debug: colors.cyan('➤'),
